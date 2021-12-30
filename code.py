@@ -15,16 +15,24 @@ def main():
     reader = csv.reader(f)
     voca = {}
     n = 0
+    
     for row in reader:
         temp = row[0]
         voca[n] = temp
         
-        
         if ( n != 0): 
             means = find_in_dictionary(voca[n])
+            
+    #Replace coma in santance to dot
+            coma = ","
+            for x in range(len(coma)):
+                means = means.replace(coma[x],".")
+    
             data = (row[0] + ", " + means+"\n")
             new.write(data)
         n = n + 1
+    #Show how many cycles been carried out
+        print("No.%d cycle clear"%n)
         
     f.close()
     new.close()
