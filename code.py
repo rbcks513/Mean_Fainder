@@ -23,7 +23,7 @@ def main():
         if ( n != 0): 
             means = find_in_dictionary(voca[n])
             
-    #Replace coma in santance to dot
+    #Replace coma in sentance to dot
             coma = ","
             for x in range(len(coma)):
                 means = means.replace(coma[x],".")
