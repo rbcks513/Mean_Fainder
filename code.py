@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import urllib.request
 import csv 
 import datetime
+from tqdm import tqdm
 
 def main():
     now = datetime.datetime.now()
@@ -16,7 +17,7 @@ def main():
     voca = {}
     n = 0
     
-    for row in reader:
+    for row in tqdm(reader):
         temp = row[0]
         voca[n] = temp
         
@@ -32,7 +33,8 @@ def main():
             new.write(data)
         n = n + 1
     #Show how many cycles been carried out
-        print("No.%d cycle clear"%n)
+    #    print("No.%d cycle clear"%n)
+    
         
     f.close()
     new.close()
