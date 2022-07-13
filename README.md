@@ -11,3 +11,6 @@
 
 ## Error report
 1. unicode error occur when means have phonetic symbol (discover 2022.01.03)
+
+## recent update 
+1. upadate loading status by using tqdm (update 2022.07.13)
