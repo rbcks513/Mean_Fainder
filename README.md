@@ -10,7 +10,11 @@
 
 
 ## Error report
-1. unicode error occur when means have phonetic symbol (discover 2022.01.03)
+1. unicode error occur when means have phonetic symbol (discovered 2022.01.03)
+
+2. IndexError : list index out of range
+(discovered 2022.09.07)
 
 ## recent update 
 1. upadate loading status by using tqdm (update 2022.07.13)
+2. gitignore add in xlsx & csv (update 2022.09.07)
